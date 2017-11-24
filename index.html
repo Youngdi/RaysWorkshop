@@ -91,6 +91,36 @@
         </div>
 
     </footer>
+    <script async>
+      function preloadImg (image) {
+        var img = new Image();
+        img.src = image;
+      }
+      window.addEventListener('load', function(){
+        var allimages= document.getElementsByTagName('img');
+        for (var i=0; i<allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+      }, false);
+      preloadImg('./img/product_1.png');
+      preloadImg('./img/product_2.png');
+      preloadImg('./img/product_3.png');
+      preloadImg('./img/product_4.png');
+      preloadImg('./img/product_5.png');
+      preloadImg('./img/product_6.png');
+      preloadImg('./img/product_7.png');
+      preloadImg('./img/product_8.png');
+      preloadImg('./img/product_9.png');
+      preloadImg('./img/product_11.png');
+      preloadImg('./img/product_12.png');
+      preloadImg('./img/product_13.png');
+      preloadImg('./img/product_14.png');
+      preloadImg('./img/product_15.png');
+      preloadImg('./img/product_16.png');
+      preloadImg('./img/product_17.png');
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
